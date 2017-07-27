@@ -25,7 +25,7 @@ body {
 	font-size: 20px;
     font-weight: bold;
 }
-
+/*-----搜尋頁面設定START-----*/
 .search_button{
 	border: 1px solid #fff;
 	color: #fff;
@@ -36,3 +36,4 @@ body {
 	background: rgba(0,0,0,0);
 	border: 0;
 }
+/*-----搜尋頁面設定END-----*/

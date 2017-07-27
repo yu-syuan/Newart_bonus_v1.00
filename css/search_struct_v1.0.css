@@ -8,10 +8,17 @@ body {
 	
 img{ width: 100%; height: auto; }
 
-/*-----紅利商品兌換區-----*/
-
+/*------紅利館大標設定START------*/
 .top_title{	text-align: center; height: 40px; }
+/*------紅利館大標設定END------*/
 
+/*-----特別企劃區START-----*/
+.activity_wrap >ul >li{
+	margin-bottom: 10px;
+}
+/*-----特別企劃區END-----*/
+
+/*-----紅利商品兌換區START-----*/
 .Product_content_wrap{
 	width: 58%;
 	float: left;
@@ -43,7 +50,9 @@ img{ width: 100%; height: auto; }
 	padding: 0;
 	border: 0;
 }
+/*-----紅利商品兌換區END-----*/
 
+/*-----搜尋頁面設定START-----*/
 .search_style{
 	height: 80px;
 	margin: 0 auto;
@@ -74,5 +83,5 @@ img{ width: 100%; height: auto; }
 .check_the_number input{
 	width: 15%;
 }
-
+/*-----搜尋頁面設定END-----*/
 
