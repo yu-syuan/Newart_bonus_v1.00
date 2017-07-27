@@ -10,13 +10,6 @@ body {
 .Overall_color{ background: #EE8072; }
 .top_title_logo{ color: #fff; }
 
-/*-----共用-----*/
-.row{ background: #fff; }
-
-/*.Border{ border: 1px solid #ccc; }*/
-
-.Border_b{ border-bottom: 1px solid #898989; }
-
 /*-----紅利兌換商品資訊-----*/
 .top_title{	color: #fff; font-size: 16px; line-height: 40px; font-weight: bold; } /*20170715移除padding:10px 0 8px 0; 新增line-height:40px;*/
 
@@ -25,18 +18,5 @@ body {
 	font-size: 20px;
     font-weight: bold;
 }
-
-/*-----兌換使用點數-----*/
-.remind_color{
-	color: red;
-	font-weight: bold;
-}
-
-.f_colorBlack{
-	color: black;
-	font-weight: bold;
-}
-
-.f_size16{ font-size: 16px; }
 
 
