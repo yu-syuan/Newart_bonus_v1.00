@@ -19,6 +19,7 @@
 <link rel="stylesheet" type="text/css" href="css/fast.css"><!-- 便利包 -->
 <link rel="stylesheet" type="text/css" href="css/checkout_struct_v1.0.css">
 <link rel="stylesheet" type="text/css" href="css/checkout_style_v1.0.css">
+<script type="text/javascript" src="js/miya.min.js"></script>
 
 </head>
 <body>
@@ -110,115 +111,71 @@
           <div class="block_model"><!--大標Start-->
             <div class="inner_box Overall_color top_title">紅利兌換商品資訊</div><!-- 320x568顯示中文17位數 -->
           </div><!--大標End-->
-          <ul class="row Border">
-            <li id="ProdDelete" class="col-xs-12 Border Border_b p-t-10 p-b-10 p-r-5 p-l-5">
+          <ul class="row Border AApieces_wrap">
+            <li id="ProdDelete" class="col-xs-12 Border Border_b p-t-10 p-b-10 p-r-5 p-l-5 pieces_wrap"> <!-- 紅利商品 Start x4 -->
               <div class="list_photo Border float-l">
                 <img src="images/prod3.jpg">
               </div>
               <div class="Product_content_wrap">
                 <div class="prod_title_wrap m-t-5 m-b-5">
-                  <div class="blank20 header_mid">
-                    <h4 class="line_h20">壹貳參肆伍陸柒捌玖拾壹貳</h4><!-- 320x568顯示中文12位數 -->
+                  <div class="blank20 inner_box overflow_h">
+                    <h4 class="line_h20">壹貳參肆伍陸柒捌玖拾壹貳</h4><!-- max word 12(繁體中文) -->
                   </div>
                   <div class="blank40">
-                  <p>壹貳參肆伍陸柒捌玖拾壹貳參肆伍陸柒捌玖拾壹貳參肆</p><!-- 320x568顯示中文14位數 -->
+                  <p>壹貳參肆伍陸柒捌玖拾壹貳參肆伍陸柒捌玖拾壹貳參肆</p><!-- max word 14(繁體中文) -->
                   </div>
                 </div>
-                <div class="blank30 m-t-10">
-                  <span>數量：</span>
-                  <select>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
-                  <span class="float-r">
+                <div class="Quantity_wrap">
+                  <span class="price_style price" sn="a" unit_price="5"></span> <!-- unit_price為單價設定 -->
+                  <span class="Subtotal_tetx">小計：</span>
+                  <span class="price_style Subtotal_tetx Subtotal" id="point_a">5</span><!-- 單價計算顯示 id="point_要互相對應上層的sn -->
+                  <span class="price_style Subtotal_tetx">點</span>
+                  <!-- <span class="f_size16">數量</span> -->
+                  <span class="ProdDelete_wrap">
                     <a href="#" class="ProdDelete">
-                      <img src="images/prod_delete.png" class="prod_delete m-b-5">
+                      <img src="images/prod_delete.png" class="prod_delete m-t-5">
                     </a>
                   </span>
-                  <span class="clear"></span>
-                </div>
-                <div class="prod_price_wrap">
-                  <span>小計：</span>
-                  <span class="price_style">8</span>
-                  <span class="price_style">點</span>
+                  <br>
+                  <button type="button" name="cut_back" class="btn btn-default cut_back">-</button>
+                  <input type="text" name="Quantity" value="1" readonly="readonly" class="Quantity" />
+                  <button type="button" name="addition" class="btn btn-default addition">+</button>
+                  <p class="remind_color">★已達數量限制</p><!-- max word 12(繁體中文) -->
                 </div>
               </div>
-            </li>
-            <li id="ProdDelete" class="col-xs-12 Border Border_b p-t-10 p-b-10 p-r-5 p-l-5">
+            </li><!-- 紅利商品 End -->
+            <li id="ProdDelete" class="col-xs-12 Border Border_b p-t-10 p-b-10 p-r-5 p-l-5 pieces_wrap"> <!-- 紅利商品 Start x4 -->
               <div class="list_photo Border float-l">
                 <img src="images/prod3.jpg">
               </div>
               <div class="Product_content_wrap">
                 <div class="prod_title_wrap m-t-5 m-b-5">
-                  <div class="blank20 header_mid">
-                    <h4 class="line_h20">抗頭皮癢涼爽敏護</h4><!-- 320x568顯示中文12位數 -->
+                  <div class="blank20 inner_box overflow_h">
+                    <h4 class="line_h20">抗頭皮癢涼爽敏護</h4><!-- max word 12(繁體中文) -->
                   </div>
                   <div class="blank40">
-                  <p>茶樹頭皮保護液120ml+茶樹舒敏止癢洗髮精285ml</p><!-- 320x568顯示中文14位數 -->
+                  <p>茶樹頭皮保護液120ml+茶樹舒敏止癢洗髮精285ml</p><!-- max word 14(繁體中文) -->
                   </div>
                 </div>
-                <div class="blank30 m-t-10">
-                  <span>數量：</span>
-                  <select>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
-                  <span class="float-r">
+                <div class="Quantity_wrap">
+                  <span class="price_style price" sn="b" unit_price="8"></span> <!-- unit_price為單價設定 -->
+                  <span class="Subtotal_tetx">小計：</span>
+                  <span class="price_style Subtotal_tetx Subtotal" id="point_b">8</span><!-- 單價計算顯示 id="point_要互相對應上層的sn -->
+                  <span class="price_style Subtotal_tetx">點</span>
+                  <!-- <span class="f_size16">數量</span> -->
+                  <span class="ProdDelete_wrap">
                     <a href="#" class="ProdDelete">
-                      <img src="images/prod_delete.png" class="prod_delete m-b-5">
+                      <img src="images/prod_delete.png" class="prod_delete m-t-5">
                     </a>
                   </span>
-                  <span class="clear"></span>
-                </div>
-                <div class="prod_price_wrap">
-                  <span>小計：</span>
-                  <span class="price_style">8</span>
-                  <span class="price_style">點</span>
-                </div>
-              </div>
-            </li>
-            <li id="ProdDelete" class="col-xs-12 Border Border_b p-t-10 p-b-10 p-r-5 p-l-5">
-              <div class="list_photo Border float-l">
-                <img src="images/prod3.jpg">
-              </div>
-              <div class="Product_content_wrap">
-                <div class="prod_title_wrap m-t-5 m-b-5">
-                  <div class="blank20 header_mid">
-                    <h4 class="line_h20">✦全台首創 降溫護膚香水✦</h4><!-- 320x568顯示中文12位數 -->
-                  </div>
-                  <div class="blank40">
-                  <p>3度C冰鎮舒緩青春露65ml(綠茶香氛)</p><!-- 320x568顯示中文14位數 -->
-                  </div>
-                </div>
-                <div class="blank30 m-t-10">
-                  <span>數量：</span>
-                  <select>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
-                  <span class="float-r">
-                    <a href="#" class="ProdDelete">
-                      <img src="images/prod_delete.png" class="prod_delete m-b-5">
-                    </a>
-                  </span>
-                  <span class="clear"></span>
-                </div>
-                <div class="prod_price_wrap">
-                  <span>小計：</span>
-                  <span class="price_style">8</span>
-                  <span class="price_style">點</span>
+                  <br>
+                  <button type="button" name="cut_back" class="btn btn-default cut_back">-</button>
+                  <input type="text" name="Quantity" value="1" readonly="readonly" class="Quantity" />
+                  <button type="button" name="addition" class="btn btn-default addition">+</button>
+                  <p class="remind_color">★已達數量限制</p><!-- max word 12(繁體中文) -->
                 </div>
               </div>
-            </li>
+            </li><!-- 紅利商品 End -->
           </ul>
         </article>
 
@@ -227,59 +184,59 @@
           <div class="block_model"><!--大標Start-->
             <div class="inner_box Overall_color top_title">兌換使用點數</div><!-- 320x568顯示中文17位數 -->
           </div><!--大標End-->
-          <ul class="Use_points_wrap mg_center">
+          <ul class="Consumption_points_wrap mg_center">
             <li class="margin10">
               <div class="float-l">
-                <span>目前紅利點數</span>
+                <span class="f_size16 f_colorBlack">目前紅利點數</span>
               </div>
               <div class="float-r">
-                <span>888</span>
-                <span>點</span>
+                <span class="f_size16 f_colorBlack" id="hold_points" hold_points="888">888</span><!-- 存放會員持有紅利點 -->
+                <span class="f_size16 f_colorBlack">點</span>
               </div>
               <div class="clear"></div>
             </li>
             <li class="margin10">
               <div class="float-l">
-                <span>兌換總計點數</span>
+                <span class="f_size16 f_colorBlack">兌換總計點數</span>
               </div>
               <div class="float-r">
-                <span>-24</span>
-                <span>點</span>
+                <span id="point_totals" class="f_size16 f_colorBlack">0</span><!-- 存放兌換總計點數 -->
+                <span class="f_size16 f_colorBlack">點</span>
               </div>
               <div class="clear"></div>
             </li>
             <li class="Border_b margin10 p-b-10">
               <div class="float-l">
-                <span>運費</span>
+                <span class="f_size16 f_colorBlack">運費</span>
               </div>
               <div class="float-r">
-                <span>$</span>
-                <span>0</span>
+                <span class="f_size16 f_colorBlack">$</span>
+                <span id="shipping_fees" class="f_size16 f_colorBlack">80</span><!-- 滿五點免運費 -->
               </div>
               <div class="clear"></div>
             </li>
             <li class="margin10">
               <div class="float-l">
-                <span>共</span>
-                <span>3</span>
-                <span>件</span>
+                <span class="f_size16 f_colorBlack">共</span>
+                <span id="pieces">0</span>
+                <span class="f_size16 f_colorBlack">件</span>
               </div>
               <div class="float-r">
-                <span class="remind_color">★紅利點數不足</span>
+                <span class="remind_color">★紅利點數不足</span><!-- 若點數不足顯示警語，並且無法點選下一步完成訂單 -->
               </div>
               <div class="clear"></div>
             </li>
             <li class="margin10">
-              <div class="float-l">
-                <span>剩餘紅利點數</span>
+              <div class="float-l m-t-5">
+                <span class="f_size16 f_colorBlack">剩餘紅利點數</span>
               </div>
               <div class="float-r">
-                <span class="price_style">864</span>
+                <span id="remaining_points" class="price_style">0</span>
                 <span class="price_style">點</span>
               </div>
               <div class="clear"></div>
             </li>
-            <li class="margin10">
+            <!-- <li class="margin10">
               <div class="float-l">
                 <span>運費金額</span>
               </div>
@@ -288,7 +245,7 @@
                 <span class="f_colorBlack f_size16">0</span>
               </div>
               <div class="clear"></div>
-            </li>
+            </li> -->
           </ul>
         </article>
 
@@ -297,17 +254,18 @@
           <div class="block_model"><!--大標Start-->
             <div class="inner_box Overall_color top_title">付款方式</div><!-- 320x568顯示中文17位數 -->
           </div><!--大標End-->
-          <ul class="blank140">
+          <ul class="blank130">
             <li class="f_colorBlack margin10">
               未具3D驗證功能之信用卡，可能導致刷卡失敗，建議使用其它信用卡或採用其它付款方式。
             </li>
             <li class="margin10 blank30">
-              <input  type="radio" name="payment" value="1" class="float-l m-r-10">
-              <span class="f_colorBlack f_size16">ATM</span>
+              <input  type="radio" name="payment" value="1" class="radio float-l m-r-10">
+              <span class="f_colorBlack f_size16 line_h30">ATM</span>
             </li>
             <li class="margin10">
-              <input  type="radio" name="payment" value="2" class="float-l m-r-10">
-              <span class="f_colorBlack f_size16">信用卡</span>
+              <input  type="radio" name="payment" value="2" class="radio float-l m-r-10">
+              <span class="f_colorBlack f_size16 line_h30">信用卡</span>
+              <p class="remind_color">★請選擇付款方式。</p>
             </li>
           </ul>
         </article>
@@ -320,19 +278,19 @@
 
           <!-- 同會員資料 -->
           <div class="margin10 blank40">
-            <input type="checkbox" name="member" value="1" class="float-l m-r-10">
+            <input type="checkbox" name="member" value="1" class="checkbox float-l m-r-10">
             <span class="f_colorBlack f_size16">(同會員資料)</span>
           </div>
           <!-- 若勾選同會員資料 以下資訊導入會員資料 -->
           <ul>
             <li class="col-xs-12 p-l-10 p-r-10 blank90">
               <h4 class="f_colorBlack f_size16 m-t-10 m-b-10">收件人姓名</h4>
-              <input type="text" name="receive_name">
+              <input type="text" name="receive_name" class="input_text"><!-- 用戶輸入收件人姓名 -->
               <span class="remind_color">★請輸入姓名，勿空白。</span>
             </li>
             <li class="col-xs-12 p-l-10 p-r-10 blank90">
               <h4 class="f_colorBlack f_size16 m-t-10 m-b-10">收件人手機</h4>
-              <input type="text" name="receive_name">
+              <input type="text" name="receive_phone" class="input_text"><!-- 用戶輸入手機號碼 -->
               <span class="remind_color">★手機格式為09開頭的10位數字</span>
             </li>
             <li class="col-xs-12 p-l-10 p-r-10 blank120">
@@ -353,13 +311,13 @@
                 <option value="4">105-松山區</option>
                 <option value="5">106-大安區</option>
               </select>
-              <input type="text" name="receive_name" class="m-t-10">
+              <input type="text" name="receive_address" class="input_text m-t-10"><!-- 用戶輸入收件地址 -->
               <span class="remind_color">★請填選縣市or請勿使用特殊符號。</span>
               <div class="clear"></div>
             </li>
             <li class="col-xs-12 p-l-10 p-r-10 blank90">
               <h4 class="f_colorBlack f_size16 m-t-10 m-b-10">備註</h4>
-              <input type="text" name="receive_name">
+              <input type="text" name="receive_name" class="input_text">
             </li>
           </ul>
           <div class="clear"></div>
@@ -368,24 +326,24 @@
         <!-- 索取三聯式發票 -->
         <article>
           <div id="get_invoice" class="margin10 blank40">
-            <input type="checkbox" name="member" value="2" class="float-l m-r-10">
+            <input type="checkbox" name="member" value="2" class="checkbox float-l m-r-10">
             <span class="f_colorBlack f_size16">索取三聯式發票</span>
           </div>
           <!-- 索取三聯式發票 勾選後顯示以下資訊 -->
           <ul class="Show_information">
             <li class="col-xs-12 p-l-10 p-r-10 blank90">
               <h4 class="f_colorBlack f_size16 m-t-10 m-b-10">公司抬頭</h4>
-              <input type="text" name="receive_name">
+              <input type="text" name="company_name" class="input_text"><!-- 用戶輸入公司名 -->
               <span class="remind_color">★請輸入公司抬頭，勿空白。</span>
             </li>
             <li class="col-xs-12 p-l-10 p-r-10 blank90">
               <h4 class="f_colorBlack f_size16 m-t-10 m-b-10">統一編號</h4>
-              <input type="text" name="receive_name">
+              <input type="text" name="company_phone" class="input_text"><!-- 用戶輸入統編 -->
               <span class="remind_color">★請輸入統一編號，勿空白。</span>
             </li>
             <li class="col-xs-12 p-l-10 p-r-10 blank90">
               <h4 class="f_colorBlack f_size16 m-t-10 m-b-10">收件人姓名</h4>
-              <input type="text" name="receive_name">
+              <input type="text" name="receive_name" class="input_text"><!-- 用戶輸入發票收件人姓名 -->
               <span class="remind_color">★請輸入發票收件人姓名，勿空白。</span>
             </li>
             <li class="col-xs-12 p-l-10 p-r-10 blank120">
@@ -406,7 +364,7 @@
                 <option value="4">105-松山區</option>
                 <option value="5">106-大安區</option>
               </select>
-              <input type="text" name="receive_name" class="m-t-10">
+              <input type="text" name="receive_address" class="input_text m-t-10"><!-- 用戶輸入發票收件地址 -->
               <span class="remind_color">★請填選縣市or請勿使用特殊符號。</span>
             </li>
           </ul>
@@ -415,7 +373,7 @@
 
         <!-- 下一步Button -->
         <div class="m-t-10 p-b-10 ta-c">
-          <button class="Big_button_style top_title">下一步</button>
+          <button type="button" name="The_next_step" class="Big_button_style top_title">下一步</button><!-- 前往完成兌換清單 -->
         </div>
 
       </div><!--兌換清單內容End-->
@@ -501,16 +459,7 @@
     $(".gotop_icon a").click(function(){
       $("html,body").animate({scrollTop:0},400);
       return false;  
-    });
-    //點擊刪除鍵 刪除商品 20170724新增
-    $(".ProdDelete").click(function(){
-      $(this).parents("#ProdDelete").remove();
-    });
-    //勾選索取三聯式發票 顯示需填寫資訊 20170724新增
-    $(".Show_information").hide();
-    $("#get_invoice").click(function(){
-      $(".Show_information").toggle(300);
-    });
+    });    
     
   });
   </script>
