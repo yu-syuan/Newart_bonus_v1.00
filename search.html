@@ -23,7 +23,8 @@
 <link rel="stylesheet" type="text/css" href="css/fast.css"><!-- 便利包 -->
 <link rel="stylesheet" type="text/css" href="css/search_struct_v1.0.css">
 <link rel="stylesheet" type="text/css" href="css/search_style_v1.0.css">
-
+<link rel="stylesheet" type="text/css" href="js/bootstrap3/css/bootstrap-tagsinput.css">
+<script type="text/javascript" src="js/bootstrap3/js/bootstrap-tagsinput.js"></script>
 </head>
 <body>
   <div class="main_wrap">
@@ -102,14 +103,44 @@
       <div class="keep_top3"></div><!-- 20170801紅利館修改成height:50px; -->
 
       <!--紅利館商品搜尋-->
-      <div class="inner_box search_style BG_gray p-t-10 p-b-10" >
-        <div class="inner_box95 mg_center">
-          <input type="text" placeholder="請輸入關鍵詞" class="search_keywords" />
-          <button class="search_button Overall_color">搜尋</button>
+      <div style="text-align: center; margin-top: 50px;">
+        <img src="images/NEWART.png" style="width: 80%; max-width: 768px; height: auto;" />
+      </div>
+      <div style="width: 100%; max-width: 800px; margin: 0 auto;">
+        <div class="ta_center">
+          <input type="text" value="測試,效果" data-role="tagsinput" placeholder="請輸入關鍵字" class="search_keywords" />
+          <button class="btn btn-danger search_button Overall_color">搜尋</button>
+        </div>
+        <div class="link_categories_wrap margin10">
+          <span style="float: left; margin-top: 10px;">熱門推薦：
+            <ul style="float: right; width: 80%;">
+              <li><a href="#">夏日清涼夏日</a></li>
+              <li><a href="#">去油去屑</a></li>
+              <li><a href="#">限定</a></li>
+              <li><a href="#">點數下殺</a></li>
+              <li><a href="#">夏日清涼</a></li>
+              <li><a href="#">去油去屑</a></li>
+              <li><a href="#">期間限定</a></li>
+              <li><a href="#">下殺</a></li>
+            </ul>
+          </span>
         </div>
         <div class="clear"></div>
+        <div class="link_categories_wrap margin10">
+          <span style="float: left; margin-top: 10px;">點數搜尋：</span>
+            <ul>
+              <li><a href="#">1點-2點</a></li>
+              <li><a href="#">3點-4點</a></li>
+              <li><a href="#">5點-6點</a></li>
+              <li><a href="#">7點-8點</a></li>
+              <li><a href="#">9點-10點</a></li>
+              <li><a href="#">10點以上</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
         
-        <div class="inner_box95 mg_center m-t-5">
+        <!-- <div class="inner_box95 mg_center m-t-5">
           <span class="f_colorWhit">紅利點搜尋：</span>
           <span class="check_the_number">
             <input type="text" placeholder="最低" name="min" />
@@ -119,14 +150,9 @@
           <button class="filter_button">
             <img src="images/filter.png">
           </button>
-        </div>        
+        </div> -->    
       </div>
       <div class="clear"></div>
-      
-      <!--紅利館商品搜尋-->
-      <form>
-        
-      </form>
 
     </article><!--content_right end--> 
 

@@ -55,7 +55,7 @@ img{ width: 100%; height: auto; }
 .search_button{
 	width:18%;
 	height: 30px;
-	float: left;
+	/*float: left;*/
 }
 
 .filter_button{
@@ -68,10 +68,10 @@ img{ width: 100%; height: auto; }
 }
 
 .search_style .search_keywords{
-	width: 80%;
+	width: 50%;
 	height: 30px;
 	margin: 0;
-	float: left;
+	/*float: left;*/
 }
 
 /*.check_the_number input{
@@ -79,3 +79,21 @@ img{ width: 100%; height: auto; }
 }*/
 /*-----搜尋頁面設定END-----*/
 
+.link_categories_wrap ul li{
+	display: inline-block;
+	margin: 5px;
+}
+
+.link_categories_wrap ul li a{
+	color: #fff;
+	width: 100%;
+	height: 30px;
+	background-color: #f09290;
+	border-radius: 5px;
+	line-height: 30px;
+	padding:0 5px;
+}
+
+.bootstrap-tagsinput{
+	width: 80%;
+}
