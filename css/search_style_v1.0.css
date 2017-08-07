@@ -11,6 +11,10 @@ body {
 .top_title_logo{ color: #fff; }
 
 /*-----搜尋頁面設定START-----*/
+.f_colorRorange{
+	color: #EE8072;
+	font-weight: bold;
+}
 
 .search_button{
 	border: 1px solid #fff;
