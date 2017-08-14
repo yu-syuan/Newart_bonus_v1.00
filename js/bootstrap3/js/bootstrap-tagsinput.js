@@ -16,8 +16,8 @@
     },
     freeInput: true,
     addOnBlur: true,
-    maxTags: undefined,
-    maxChars: undefined,
+    maxTags: 5, //20170810原undefined(限制tags數量)
+    maxChars: 17, //20170810原undefined(限制tags字數)
     confirmKeys: [13, 44],
     delimiter: ',',
     delimiterRegex: null,
@@ -62,8 +62,16 @@
     add: function(item, dontPushVal, options) {
       var self = this;
 
-      if (self.options.maxTags && self.itemsArray.length >= self.options.maxTags)
+      // if (self.options.maxTags && self.itemsArray.length >= self.options.maxTags) 20170812套件原始程式碼
+      //   return;
+
+      if (self.itemsArray.length >= self.options.maxTags){
+        $(".remind_color").html("關鍵字搜尋上限為" + self.options.maxTags + "組喔！"); //20170811增加超過maxTags就提示
         return;
+      }
+      // console.log(self.options.maxTags);
+      // console.log('oo'+self.itemsArray.length);
+      // console.log('aa'+self.options.maxTags);
 
       // Ignore falsey values, except false
       if (item !== false && !item)
