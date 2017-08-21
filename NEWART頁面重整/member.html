@@ -14,14 +14,14 @@
 <!-- self page -->
 <link rel="stylesheet" type="text/css" href="js/bootstrap3/css/bootstrap.css" />
 <script type="text/javascript" src="js/bootstrap3/js/bootstrap.js"></script>
-<link rel="stylesheet" type="text/css" href="css/reset.css"><!-- 基本清除 -->
-<link rel="stylesheet" type="text/css" href="css/fast.css"><!-- 便利包 -->
+<link rel="stylesheet" type="text/css" href="css/reset_and_fast.css"><!-- bootstrap清除+fast便利包 -->
 <link rel="stylesheet" type="text/css" href="css/web_struct_v1.0.css" />
 <link rel="stylesheet" type="text/css" href="css/web_style_v1.0.css" />
 <link rel="stylesheet" type="text/css" href="css/web_color_v1.0.css" />
 <link rel="stylesheet" type="text/css" href="css/member_struct_v2.0.css" />
 <link rel="stylesheet" type="text/css" href="css/member_style_v2.0.css" />
 <link rel="stylesheet" type="text/css" href="css/member_color_v2.0.css" />
+<script type="text/javascript" src="js/newart_main.min.js"></script>
 
 </head>
 <body>
@@ -43,7 +43,7 @@
       <!-- header 網站名稱 -->
       <div class="header_mid">
         <a href="#">
-          <div class="header_logo">NEWART</div>
+          <h1 class="header_logo">NEWART</h1>
         </a><!-- max words 8 (繁體中文) 12(英文) -->
       </div>
       <!-- 首頁 icon -->
@@ -61,7 +61,7 @@
       <!-- 搜尋 content -->
       <div class="search_wrap basic_color Border">
         <div class="search_bar">
-          <input type="text" placeholder="請輸入關鍵詞" />
+          <input type="text" placeholder="請輸入關鍵字" id="search_value" />
           <button type="button" class="search_btn">搜尋</button>
           <div class="clear"></div>
         </div>
@@ -69,13 +69,13 @@
       <!-- 會員專區 member header -->
       <div class="member_header_wrap"><!-- 與紅利館做切換 -->
         <div class="inner_box95 mg-c">
-          <p class="float-l">
+          <div class="float-l">
             <span class="member_icon">
               <img src="images/menu_icon_member.png"/>
             </span>
             <span>0912345678</span>
-          </p>
-          <span class="logout_btn float-r"><a href="#"><p>登出</p></a></span>
+          </div>
+          <span class="logout_btn float-r"><a href="#">登出</a></span>
           <p class="clear"></p>
         </div>
       </div>
@@ -88,152 +88,92 @@
             <span>點</span>
           </div>
         </div>
-        <div class="bonus_header_logo"><a href="#"><p>紅利館</p></a></div>連結至紅利館首頁
+        <div class="bonus_header_logo"><a href="#">紅利館</a></div>連結至紅利館首頁
       </div> -->
+    </header>
+
+    <div class="blank60"></div><!-- 官網header用 -->
+    <div class="blank50"></div><!-- 會員專區與紅利館共用 -->
+
+    <section class="content_wrap">
       <!-- hamburger content -->
-      <div class="content_left Border">
+      <article class="content_left Border">
         <div class="hamburger_list_wrap Border">
           <ul id="hamburger_menu" class="Border">
             <li class="basic_font_color Border">頭皮出油</li> <!-- max words 18(繁體中文) -->
             <ul class="hamburger_show basic_color Border">
-              <li><a href="#"><p>全套加強調理組</p></a></li><!-- max words 18(繁體中文) -->
-              <li><a href="#"><p>控油頭皮保養液</p></a></li>
-              <li><a href="#"><p>油脂調理洗髮精</p></a></li>
-              <li><a href="#"><p>油脂調理護髮素</p></a></li>
+              <li><a href="#">全套加強調理組</a></li><!-- max words 18(繁體中文) -->
+              <li><a href="#">控油頭皮保養液</a></li>
+              <li><a href="#">油脂調理洗髮精</a></li>
+              <li><a href="#">油脂調理護髮素</a></li>
             </ul>
             <li class="basic_font_color Border">頭皮屑癢</li> <!-- max words 18(繁體中文) -->
             <ul class="hamburger_show basic_color Border">
-              <li><a href="#"><p>全套加強調理組</p></a></li><!-- max words 18(繁體中文) -->
-              <li><a href="#"><p>止癢頭皮保養液</p></a></li>
-              <li><a href="#"><p>去屑止癢洗髮精</p></a></li>
-            </ul>            
+              <li><a href="#">全套加強調理組</a></li><!-- max words 18(繁體中文) -->
+              <li><a href="#">止癢頭皮保養液</a></li>
+              <li><a href="#">去屑止癢洗髮精</a></li>
+            </ul>
           </ul>
           <div class="copyright">
             <p>秒創超網訂購專線</p>
             <p>(02)8228-0580</p>
           </div>
         </div>
-      </div>
-    </header>
-
-    <div class="blank60"></div><!-- 官網header用 -->
-    <div class="blank50"></div><!-- 會員專區與紅利館共用 -->
-
-    <article class="content_right"> 
-      <!-- 會員專區 member function old -->
-      <!-- <ul class="member_function_wrap">
-        <li class="p-l-15">
-          <a href="#"><p class="font_color_Black">個人資料</p></a>
-        </li>
-        <li class="p-l-15">
-          <a href="#"><p class="font_color_Black">訂單查詢</p></a>
-        </li>
-        <li class="p-l-15">
-          <a href="#"><p class="font_color_Red">紅利館</p></a>
-        </li>
-        <li class="p-l-15">
-          <a href="#"><p class="font_color_Black">紅利點數兌換紀錄</p></a>
-        </li>
-        <li class="p-l-15">
-          <a href="#"><p class="font_color_Black">常用收件人 / 門市修改</p></a>
-        </li>
-        <li class="p-l-15">
-          <a href="#"><p class="font_color_Black">退貨紀綠</p></a>
-        </li>
-        <li class="p-l-15">
-          <a href="#"><p class="font_color_Black">密碼修改</p></a>
-        </li>
-      </ul>  -->
-      <!-- 會員專區 member function new -->
-      <div class="member_information_wrap">
-        <div class="m-b-30">
-          <div>
-            <img src="images/member.png" class="member_information_img m-b-5 m-r-5 float-l">
-            <h4 class="font_color_Black font_size_16 blank30 line_height_30">會員設定</h4>
+      </article>
+      <!-- main content -->
+      <article class="content_right">
+        <!-- 會員專區 member function new -->
+        <div class="member_information_wrap">
+          <div class="m-b-30">
+            <div>
+              <img src="images/member.png" class="member_information_img m-b-5 m-r-5 float-l">
+              <h4 class="font_color_Black font_size_16 blank30 line_height_30">會員設定</h4>
+            </div>
+            <ul>
+              <li><a href="#"><p class="member_button">會員基本資料</p></a></li><!-- max words 18(繁體中文) -->
+              <li><a href="#"><p class="member_button">常用收件人</p></a></li>
+              <li><a href="#"><p class="member_button">常用統一編號</p></a></li>
+              <li><a href="#"><p class="member_button">修改密碼</p></a></li>
+              <li><a href="#"><p class="member_button">會員隱私權 / 權益說明</p></a></li>
+            </ul>
           </div>
-          <ul>
-            <li><a href="#"><p class="member_button">會員基本資料</p></a></li><!-- max words 18(繁體中文) -->
-            <li><a href="#"><p class="member_button">常用收件人</p></a></li>
-            <li><a href="#"><p class="member_button">常用統一編號</p></a></li>
-            <li><a href="#"><p class="member_button">修改密碼</p></a></li>
-            <li><a href="#"><p class="member_button">會員隱私權 / 權益說明</p></a></li>
-          </ul>
-        </div>
-        <div class="m-b-30">
-          <div>
-            <img src="images/order.png" class="member_information_img m-b-5 m-r-5 float-l">
-            <h4 class="font_color_Black font_size_16 blank30 line_height_30">訂單資訊</h4>
+          <div class="m-b-30">
+            <div>
+              <img src="images/order.png" class="member_information_img m-b-5 m-r-5 float-l">
+              <h4 class="font_color_Black font_size_16 blank30 line_height_30">訂單資訊</h4>
+            </div>
+            <ul>
+              <li><a href="#"><p class="member_button">訂單紀錄</p></a></li>
+              <li><a href="#"><p class="member_button">退貨紀錄</p></a></li>
+            </ul>
           </div>
-          <ul>
-            <li><a href="#"><p class="member_button">訂單紀錄</p></a></li>
-            <li><a href="#"><p class="member_button">退貨紀錄</p></a></li>
-          </ul>
-        </div>
-        <div class="p-b-30">
-          <div>
-            <img src="images/bonus.png" class="member_information_img m-b-5 m-r-5 float-l">
-            <h4 class="font_color_Black font_size_16 blank30 line_height_30">紅利館</h4>
+          <div class="p-b-30">
+            <div>
+              <img src="images/bonus.png" class="member_information_img m-b-5 m-r-5 float-l">
+              <h4 class="font_color_Black font_size_16 blank30 line_height_30">紅利館</h4>
+            </div>
+            <ul>
+              <li><a href="#"><p class="member_button">前往紅利館</p></a></li>
+              <li><a href="#"><p class="member_button">紅利點兌換紀錄</p></a></li>
+            </ul>
           </div>
-          <ul>
-            <li><a href="#"><p class="member_button">前往紅利館</p></a></li>
-            <li><a href="#"><p class="member_button">紅利點兌換紀錄</p></a></li>
-          </ul>
         </div>
-      </div>
-      </div>
-    </article>
+        <div class="copyright">
+          <p>秒創超網訂購專線</p>
+          <p>(02)8228-0580</p>
+        </div>
+      </article>
+    </section>
 
     <footer class="footer_menu_wrap Border">
       <ul>
-        <li class="menu_icon member"><a href="#"><p>會員專區</p></a></li>
-        <li class="menu_icon order"><a href="#"><p>訂單查詢</p></a></li>
-        <li class="menu_icon buy"><a href="#"><p>結帳</p></a></li>
-        <li class="menu_icon fbmsg"><a href="#"><p>線上客服</p></a></li>
-        <li class="menu_icon contact"><a href="#"><p>聯絡我們</p></a></li>
+        <li class="menu_icon member"><a href="#">會員專區</a></li>
+        <li class="menu_icon order"><a href="#">訂單查詢</a></li>
+        <li class="menu_icon buy"><a href="#">結帳</a></li>
+        <li class="menu_icon fbmsg"><a href="#">線上客服</a></li>
+        <li class="menu_icon contact"><a href="#">聯絡我們</a></li>
       </ul>
     </footer>
   </section>
-  <script>
-  $(function() {
-    //點擊hamburger_icon選單(Header)
-    $(".hamburger_icon").click(function() {  
-      $(".search_wrap").hide(); //搜尋關鍵字隱藏
-      $(".content_left").toggle("slide",300); //Menu內容
-      $(".content_right").toggle("slide",300); //內容
-    });
-    //點擊search_icon搜尋
-    $(".search_wrap").hide();
-    $(".search_icon").click(function() {
-      $(".search_wrap" ).toggle("blind",300); //搜尋關鍵字滑出
-      $(".content_left").hide(); //Menu內容隱藏
-      $(".content_right").show(); //內容顯示
-    });
-    // gotop設定
-    $(".gotop_icon").hide()  
-    $(window).scroll(function(){
-      if($(this).scrollTop()>1){
-        $(".gotop_icon").fadeIn();
-      } else {
-        $(".gotop_icon").fadeOut();
-        }
-    });   
-    $(".gotop_icon a").click(function(){
-      $("html,body").animate({scrollTop:0},400);
-      return false;  
-    });
-    // footer menu_icon點擊換色
-    $(".menu_icon").click(function(){
-      $(".menu_icon a").removeClass("active");
-      $(this).children(".menu_icon a").addClass("active");
-    });
-  });
-  // 20170814 hamburger_menu 製作
-  $(function(){
-    $("#hamburger_menu > li").click(function(){
-      $("#hamburger_menu .hamburger_show").slideUp();
-      $(this).next().stop().slideToggle(300);
-    });
-  });
-  </script> 
 </body>
 </html>

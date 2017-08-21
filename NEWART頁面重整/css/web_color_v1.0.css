@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 body{
-	background-color: #fff;
+	background:#E6E6E6;
 }
 
 /*-----官網整體色系-----*/
@@ -52,7 +52,7 @@ hr{
 .hamburger_list_wrap > ul > ul > li {
 	border-color: #ddd;
 }
-#hamburger_menu .hamburger_show p {
+#hamburger_menu .hamburger_show a {
 	color: #fff;
 }
 .copyright {
@@ -62,7 +62,7 @@ hr{
 .footer_menu_wrap{
 	background-color: #B3B3B3;
 }
-.menu_icon p{
+.menu_icon a{
 	color: #fff;
 }
 /*-----會員專區 member header-----*/
@@ -73,7 +73,7 @@ hr{
 .logout_btn{
 	background:#333;
 }
-.logout_btn p{
+.logout_btn a{
 	color:#fff;
 }
 /*-----紅利館 bonus header-----*/
@@ -83,7 +83,7 @@ hr{
 .dividend_wrap span{
 	color: #fff;
 }
-.bonus_header_logo p{
+.bonus_header_logo a{
 	color: #fff;
 }
 /*-----橫向商品列表-----*/
